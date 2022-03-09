@@ -3,7 +3,8 @@ const rightAsiad = document.querySelector("#right-asiad");
 const footer = document.querySelector("footer");
 const usrInput = document.querySelector("#usrInput");
 const senBTN = document.querySelector("#sendBTN");
-
+const confirmModal = document.querySelector("#confirmModal")
+const checkRegExp = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
 const openPhoto = (e) => {
   if (e.target.matches("#cat1")) {
     window.open("/photos/cat1.jpg");
@@ -33,15 +34,15 @@ const openLinks = (e) => {
   }
 };
 const sendMsg = () => {
-  if (usrInput.value == "") {
+  if (usrInput.value !== "" && checkRegExp.test(usrInput.value)){
+    usrInput.style.backgroundColor = "white";
+  } else {
     senBTN.disabled = true
     usrInput.style.backgroundColor = "tomato";
     usrInput.value = "to pole jest obowiązkowe...";
-  } else {
-    usrInput.style.backgroundColor = "white";
-    usrInput.value = "";
   }
-};
+  }
+
 usrInput.onclick = () => {
     senBTN.disabled = false
   usrInput.style.backgroundColor = "white";
