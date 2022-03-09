@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SZABLON SKLEPU</title>
+    <meta name="description" content="szablon sklepu internetowego" />
+    <meta name="keywords" content="sprzedaż, sklep, internet, zamówienie, @" />
+    <meta name="author" content="Andrzej Gębala" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/788debddc7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" ><i class="fa-solid fa-cat fa-3x"></i></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">START</a></li>
+          <li><a href="#">O NAS</a></li>
+          <li><a href="#">DODATKI</a></li>
+          <li><a href="#">CENNIK</a></li>
+        </ul>
+        <button type="button" class="btn btn-default" id="menu-btn">HELLO</button>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row content">
+        <div class="col-sm-3" id="left-asaid">
+          <img id="tiger" src="/photos/tiger.jpg" alt="tiger photo" />
+        </div>
+        <div class="col-sm-9" id="right-asiad">
+          <h1>ZAPRASZAMY</h1>
+          <div class="col-sm-4 img-thumbnail" id="row-one">
+            <img id="cat1" src="/photos/cat1.jpg" alt="cat photo" /><br />
+            <p class="info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              luctus pellentesque justo, eu iaculis neque mattis ut. Curabitur
+              non purus convallis, posuere diam ut, viverra orci. Aliquam eu
+              viverra augue. Praesent fermentum lorem ut nisl fringilla dapibus
+              sed in metus. Integer egestas nibh congue elit eleifend gravida.
+              Phasellus blandit eget orci sed lobortis. Sed aliquet placerat
+              tellus, id ultrices sapien finibus a.
+            </p>
+          </div>
+          <div class="col-sm-4 img-thumbnail" id="row-two">
+            <img id="cat2" src="/photos/cat2.jpg" alt="cat photo" /><br />
+            <p class="info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              luctus pellentesque justo, eu iaculis neque mattis ut. Curabitur
+              non purus convallis, posuere diam ut, viverra orci. Aliquam eu
+              viverra augue. Praesent fermentum lorem ut nisl fringilla dapibus
+              sed in metus. Integer egestas nibh congue elit eleifend gravida.
+              Phasellus blandit eget orci sed lobortis. Sed aliquet placerat
+              tellus, id ultrices sapien finibus a.
+            </p>
+          </div>
+          <div class="col-sm-4 img-thumbnail" id="row-three">
+            <img id="cat3" src="/photos/cat3.jpg" alt="cat photo" /><br />
+            <p class="info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              luctus pellentesque justo, eu iaculis neque mattis ut. Curabitur
+              non purus convallis, posuere diam ut, viverra orci. Aliquam eu
+              viverra augue. Praesent fermentum lorem ut nisl fringilla dapibus
+              sed in metus. Integer egestas nibh congue elit eleifend gravida.
+              Phasellus blandit eget orci sed lobortis. Sed aliquet placerat
+              tellus, id ultrices sapien finibus a.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer" class="container-fluid">
+      <div class="col-sm-6">
+        <div style="margin-top: 10%;" class="col-sm-4">
+          <div class="text-center">
+          <button type="button" class="btn btn-danger">ADOPTUJ KOTA</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="footer-menu"><a href="#section2">HOME</a></li>
+            <li class="footer-menu"><a href="#section3">O NAS</a></li>
+            <li class="footer-menu"><a href="#section3">CENNIK</a></li>
+            <li class="footer-menu"><a href="#section3">KONTAKT</a></li>
+          </ul><br>
+        </div>
+        <div class="col-sm-4">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="footer-menu"><a href="#section2">BLOG</a></li>
+            <li class="footer-menu"><a href="#section3">SZUKAJ</a></li>
+            <li class="footer-menu"><a href="#section3">POLITYKA PRYWATNOŚCI</a></li>
+            <li class="footer-menu"><a href="#section3">SPOŁECZEŃSTWO</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6" id="main-email-col">
+        <div class="row">
+          <div class="form-group email-holder">
+            <label for="usr" style="color: white"
+              >Zapisz się do NEWSLETTERA (podaj swój email):</label><br />
+            <input type="email" class="form-control" id="usr" />
+            <button type="button" class="btn btn-default">ZAPISZ SIĘ...</button>
+          </div>
+        </div>
+        <div class="row" style="text-align: center">
+          <div class="col-sm-3"><i style="color: white;" class="fab fa-facebook fa-3x"></i></div>
+          <div class="col-sm-3"><i style="color: white" class="fab fa-youtube fa-3x"></i></div>
+          <div class="col-sm-3"><i style="color: white" class="fab fa-instagram-square fa-3x"></i></div>
+          <div class="col-sm-3"><i style="color: white" class="fab fa-twitter-square fa-3x"></i></div>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

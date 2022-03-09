@@ -1,0 +1,57 @@
+
+.row.content{
+    height: 60vh;
+}
+.col-sm-3{
+    height: auto;
+}
+#menu-btn{
+    position: absolute;
+    right: 3%;
+    top:2%;
+}
+#left-asaid{
+    border-radius: 5px;
+    height: auto;
+}
+#right-asiad H1{
+    margin-left: 20px;
+}
+
+#cat1, #cat2, #cat3{
+    margin-bottom: 10%;
+    border-radius: 8px;
+    width: 100%;
+}
+#tiger{
+    width: 100%;
+    border-radius: 8px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#footer{
+    height: 200px;
+    width: 100%;
+    background-color:#47525E;
+}
+#main-email-col{
+    top:15%;
+    margin-bottom: 40px;
+}
+.email-holder{
+    text-align: center;
+}
+#usr{
+    width: 50%;
+    display: inline-block;
+}
+.footer-menu{
+    color: white;
+}
+a{
+    color: white;
+}
+I{
+    cursor: pointer;
+}
