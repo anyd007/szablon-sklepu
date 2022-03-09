@@ -16,21 +16,28 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/788debddc7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/788debddc7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav class="navbar navbar-default">
+    <nav id="top" class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" ><i class="fa-solid fa-cat fa-3x"></i></a>
+          <a class="navbar-brand"><i class="fa-solid fa-cat fa-3x"></i></a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">START</a></li>
-          <li><a href="#">O NAS</a></li>
-          <li><a href="#">DODATKI</a></li>
-          <li><a href="#">CENNIK</a></li>
+          <li><a href="#">START</a></li>
+          <li><a href="#left-asaid">O NAS</a></li>
+          <li><a href="#main-email-col">KONTAKT</a></li>
+          <li>
+            <a target="blank" href="https://www.kittensup4sale.com">CENNIK</a>
+          </li>
         </ul>
-        <button type="button" class="btn btn-default" id="menu-btn">HELLO</button>
+        <button type="button" class="btn btn-default" id="menu-btn">
+          HELLO
+        </button>
       </div>
     </nav>
     <div class="container-fluid">
@@ -81,42 +88,73 @@
     </div>
     <footer id="footer" class="container-fluid">
       <div class="col-sm-6">
-        <div style="margin-top: 10%;" class="col-sm-4">
+        <div style="margin-top: 10%" class="col-sm-4">
           <div class="text-center">
-          <button type="button" class="btn btn-danger">ADOPTUJ KOTA</button>
+            <button type="button" class="adoption btn btn-danger">
+              ADOPTUJ KOTA
+            </button>
           </div>
         </div>
         <div class="col-sm-4">
           <ul class="nav nav-pills nav-stacked">
-            <li class="footer-menu"><a href="#section2">HOME</a></li>
-            <li class="footer-menu"><a href="#section3">O NAS</a></li>
-            <li class="footer-menu"><a href="#section3">CENNIK</a></li>
-            <li class="footer-menu"><a href="#section3">KONTAKT</a></li>
-          </ul><br>
+            <li class="footer-menu"><a href="#top">HOME</a></li>
+            <li class="footer-menu"><a href="#left-asaid">O NAS</a></li>
+            <li class="footer-menu">
+              <a target="blank" href="https://www.kittensup4sale.com">CENNIK</a>
+            </li>
+            <li class="footer-menu"><a href="#">KONTAKT</a></li>
+          </ul>
+          <br />
         </div>
         <div class="col-sm-4">
           <ul class="nav nav-pills nav-stacked">
-            <li class="footer-menu"><a href="#section2">BLOG</a></li>
-            <li class="footer-menu"><a href="#section3">SZUKAJ</a></li>
-            <li class="footer-menu"><a href="#section3">POLITYKA PRYWATNOŚCI</a></li>
-            <li class="footer-menu"><a href="#section3">SPOŁECZEŃSTWO</a></li>
+            <li class="footer-menu"><a href="#">BLOG</a></li>
+            <li class="footer-menu"><a href="#">POLITYKA PRYWATNOŚCI</a></li>
+            <li class="footer-menu">
+              <a
+                target="blank"
+                href="https://www.google.com/search?q=cats&oq=cats&aqs=chrome.0.
+              69i59j46i433i512j69i59l3j0i433i512j0i512j46i512j0i512j46i512.1701j0j15&sourceid=chrome&ie=UTF-8"
+                >SZUKAJ</a
+              >
+            </li>
+            <li class="footer-menu"><a href="#">SPOŁECZEŃSTWO</a></li>
           </ul>
         </div>
       </div>
       <div class="col-sm-6" id="main-email-col">
         <div class="row">
           <div class="form-group email-holder">
-            <label for="usr" style="color: white"
-              >Zapisz się do NEWSLETTERA (podaj swój email):</label><br />
-            <input type="email" class="form-control" id="usr" />
-            <button type="button" class="btn btn-default">ZAPISZ SIĘ...</button>
+            <form>
+              <label for="usrInput" style="color: white"
+                >Zapisz się do NEWSLETTERA (podaj swój email):</label
+              ><br />
+              <input name="email" type="email" class="form-control" id="usrInput" />
+              <button value="Submit" type="submit" class="btn btn-default" id="sendBTN">
+                ZAPISZ SIĘ...
+              </button>
+            </form>
           </div>
         </div>
         <div class="row" style="text-align: center">
-          <div class="col-sm-3"><i style="color: white;" class="fab fa-facebook fa-3x"></i></div>
-          <div class="col-sm-3"><i style="color: white" class="fab fa-youtube fa-3x"></i></div>
-          <div class="col-sm-3"><i style="color: white" class="fab fa-instagram-square fa-3x"></i></div>
-          <div class="col-sm-3"><i style="color: white" class="fab fa-twitter-square fa-3x"></i></div>
+          <div class="col-sm-3">
+            <i style="color: white" class="facebook fab fa-facebook fa-3x"></i>
+          </div>
+          <div class="col-sm-3">
+            <i style="color: white" class="youtube fab fa-youtube fa-3x"></i>
+          </div>
+          <div class="col-sm-3">
+            <i
+              style="color: white"
+              class="instagram fab fa-instagram-square fa-3x"
+            ></i>
+          </div>
+          <div class="col-sm-3">
+            <i
+              style="color: white"
+              class="twetter fab fa-twitter-square fa-3x"
+            ></i>
+          </div>
         </div>
       </div>
     </footer>
